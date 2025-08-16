@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OroSuraksha - Oral Health Screening</title>
+  <style>
+    /* ---------- Global Styles ---------- */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+    body { background: #f9fafb; color: #333; line-height: 1.6; scroll-behavior: smooth; }
+
+    /* ---------- Header ---------- */
+    header {
+      background: linear-gradient(90deg, #0077b6, #0096c7);
+      color: #fff; padding: 1rem 2rem;
+      display: flex; justify-content: space-between; align-items: center;
+      position: sticky; top: 0; z-index: 1000;
+    }
+    header h1 { font-size: 1.6rem; font-weight: bold; }
+    nav a {
+      color: #fff; margin-left: 1.5rem; text-decoration: none; font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover, nav a.active { color: #ffd60a; }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      text-align: center; padding: 5rem 2rem;
+      background: linear-gradient(to right, #caf0f8, #edf6f9);
+    }
+    .hero h2 { font-size: 2.8rem; color: #023e8a; margin-bottom: 1rem; }
+    .hero p { font-size: 1.2rem; max-width: 700px; margin: auto; }
+
+    /* ---------- Section ---------- */
+    .section {
+      padding: 3rem 2rem; max-width: 1100px; margin: auto;
+    }
+    .section h3 {
+      text-align: center; margin-bottom: 2rem; font-size: 2rem; color: #0077b6;
+    }
+
+    /* ---------- Features ---------- */
+    .features {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #fff; border-radius: 12px; padding: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card h4 { color: #0096c7; margin-bottom: 0.5rem; }
+
+    /* ---------- Table ---------- */
+    table {
+      width: 100%; border-collapse: collapse; margin-top: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    th, td {
+      padding: 1rem; border: 1px solid #ddd; text-align: left;
+    }
+    th { background: #0096c7; color: #fff; }
+
+    /* ---------- Contact ---------- */
+    form {
+      background: #fff; padding: 2rem; border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1); max-width: 600px; margin: auto;
+    }
+    form label { display: block; margin-top: 1rem; font-weight: 500; }
+    form input, form textarea {
+      width: 100%; padding: 0.8rem; margin-top: 0.5rem;
+      border: 1px solid #ccc; border-radius: 8px; font-size: 1rem;
+    }
+    form button {
+      margin-top: 1.5rem; padding: 0.8rem 1.5rem;
+      background: #0077b6; color: #fff; border: none;
+      border-radius: 8px; cursor: pointer; transition: background 0.3s ease;
+    }
+    form button:hover { background: #023e8a; }
+
+    /* ---------- Footer ---------- */
+    footer {
+      background: #023e8a; color: #fff; text-align: center; padding: 1.5rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>OroSuraksha</h1>
+    <nav>
+      <a href="#home" class="active">Home</a>
+      <a href="#features">Features</a>
+      <a href="#screening">Screening</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <h2>Nationwide Oral Health Screening</h2>
+    <p>OroSuraksha helps detect oral cancer, precancerous conditions, systemic disease signs, clefts, deformities, and tracks dental risks using AI.</p>
+  </section>
+
+  <!-- Features -->
+  <section class="section" id="features">
+    <h3>Key Features</h3>
+    <div class="features">
+      <div class="card">
+        <h4>AI-Powered Risk Analysis</h4>
+        <p>Real-time AI models analyze user data and photos to detect oral diseases and risks.</p>
+      </div>
+      <div class="card">
+        <h4>Chatbot Screening</h4>
+        <p>Interactive, age-specific dental and medical chatbot with voice support for easy use.</p>
+      </div>
+      <div class="card">
+        <h4>Photo Guidance</h4>
+        <p>Guided camera module with overlays ensures accurate oral photo capture for screening.</p>
+      </div>
+      <div class="card">
+        <h4>Instant Report</h4>
+        <p>Generates personalized health reports with risk levels, detected issues, and referrals.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screening -->
+  <section class="section" id="screening">
+    <h3>Age-Wise Screening Focus</h3>
+    <table>
+      <tr><th>Age Group</th><th>Focus</th></tr>
+      <tr><td>0–5 yrs</td><td>Cleft lip/palate, neonatal teeth, nursing bottle caries</td></tr>
+      <tr><td>6–12 yrs</td><td>Mixed dentition, hygiene, early ortho, eruption disorders</td></tr>
+      <tr><td>13–19 yrs</td><td>Hygiene, ortho, tobacco risk, ulcers, systemic signs</td></tr>
+      <tr><td>20–40 yrs</td><td>Cancer, stress-related lesions, hormonal influence</td></tr>
+      <tr><td>41–60 yrs</td><td>Diabetes, hypertension, pre-cancer, periodontitis</td></tr>
+      <tr><td>60+ yrs</td><td>Cancer, systemic illness, dentures, mucosal lesions</td></tr>
+    </table>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <h3>Contact Us</h3>
+    <form id="contactForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" placeholder="Type your message..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 OroSuraksha. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Inline JavaScript -->
+  <script>
+    // Navbar active link highlight
+    const navLinks = document.querySelectorAll('nav a');
+    window.addEventListener('scroll', () => {
+      let fromTop = window.scrollY + 100;
+      navLinks.forEach(link => {
+        let section = document.querySelector(link.getAttribute('href'));
+        if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+          navLinks.forEach(l => l.classList.remove('active'));
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // Contact form validation (simple demo)
+    document.getElementById('contactForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      if (!name || !email || !message) {
+        alert("Please fill in all fields!");
+        return;
+      }
+      alert("Thank you " + name + "! Your message has been received.");
+      e.target.reset();
+    });
+  </script>
+
+</body>
+</html>
